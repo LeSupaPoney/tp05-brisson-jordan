@@ -1,0 +1,6 @@
+<p>Catalogue</p>
+
+<div *ngFor="let p of produits$ | async">
+  {{ p.ref }} {{ p.designation }} {{ p.prix }}
+  <button (click)="ajouterPanier(p)">Ajouter</button>
+</div>

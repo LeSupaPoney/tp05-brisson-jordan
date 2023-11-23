@@ -1,0 +1,6 @@
+<p>Panier</p>
+
+<div *ngFor="let p of liste$ | async">
+  {{ p.ref }} {{ p.designation }} {{ p.prix }}
+  <button (click)="supprimerPanier(p)">Supprimer</button>
+</div>
